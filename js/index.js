@@ -4,9 +4,13 @@ var SmallScreenMenu = document.querySelector('.small-screen-Menu');
 
 var SignUpBtn = document.querySelector('#SignUpBtn');
 var LoginBtn = document.querySelector('#LoginBtn');
+
 var containersignup = document.querySelector('.container-signup');
+var loginContainer = document.querySelector('.login-container');
 
 var smallScreenMenuSignUpBtn = document.querySelector('#small-screen-Menu-signUp-btn'); 
+var smallScreenMenuLoginbtn = document.querySelector('#small-screen-Menu-Login-btn');
+
 
 // Display menu for small screens
 MenuToggle.addEventListener('click', displayMenu);
@@ -16,6 +20,7 @@ function displayMenu(){
     MenuTogglecloser.style.display = 'block';
     SmallScreenMenu.style.display = 'block';
     containersignup.style.display = 'none';
+    
 }
 
 // close menu for small screens
@@ -26,15 +31,27 @@ function closeMenu(){
     MenuTogglecloser.style.display = 'none';
     SmallScreenMenu.style.display = 'none';
     containersignup.style.display = 'none';
+    loginContainer.style.display = 'none';
 }
 
 
-// container-signup
+// display signup
 smallScreenMenuSignUpBtn.addEventListener('click', displaySignUp);
 SignUpBtn.addEventListener('click', displaySignUp);
 
 function displaySignUp(){
     containersignup.style.display = 'block';
+    SmallScreenMenu.style.display = 'none';
+    loginContainer.style.display = 'none';
+}
+
+// display Login
+LoginBtn.addEventListener('click', displayLogin);
+smallScreenMenuLoginbtn.addEventListener('click', displayLogin);
+
+function displayLogin(){
+    loginContainer.style.display = 'block';
+    containersignup.style.display = 'none';
     SmallScreenMenu.style.display = 'none';
 }
 
