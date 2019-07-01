@@ -269,10 +269,11 @@ p {
     display: none;
     animation-name: move-Signup;
     animation-duration: 3s;
+    overflow-y: hidden;
 }
 
 @keyframes move-Signup{
-    0% {top: 25px;}
+    0% {top: 10px;}
     25% {top: 60px}
 }
 
