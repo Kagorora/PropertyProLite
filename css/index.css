@@ -97,7 +97,8 @@ p {
 
 .Registrations {
     float: right;
-    margin: 18px 4rem;
+    margin: 10px 4rem;
+    box-sizing: border-box;
 }
 
 .Registrations button {
@@ -116,6 +117,7 @@ p {
     border: 1px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
+    outline: none;
 }
 
 #SignUpBtn {
@@ -128,6 +130,129 @@ p {
     border-color: rgb(59, 139, 204);
     margin-left: 1rem;
 }
+
+/* ==================================   Welcome Notes ========== */
+
+.wordsSide {
+    margin: 8.5% 5% 0 35%;
+    position: absolute;
+}
+
+.animated-words {
+    /* display: inline;
+    
+    font-weight: 1000;
+    text-transform: uppercase;
+    background: #1e90ff;
+    font-size: 1.8rem;
+     */
+     font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    color: #525252;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+}
+
+.animated-words span:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.animated-words span:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.animated-words span:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.animated-words span:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+}
+
+.animated-words span:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    display: inline;
+    -webkit-animation: animateWord 12s linear infinite 0s;
+    -ms-animation: animateWord 12s linear infinite 0s;
+    animation: animateWord 12s linear infinite 0s;
+    
+}
+
+@-webkit-keyframes animateWord {
+    0% {
+        opacity: 0
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(20%);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.AppDescr {
+    margin-top: 2rem;
+}
+
+.AppDescr p {
+    font-family: 'Assistant', sans-serif;
+    /* font-size: 16px; */
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.StartNow button {
+    border: none;
+    background: #145599;
+    color: white;
+    padding: 10px;
+    width: 40%;
+    font-size: 12px;
+    font-family: 'Assistant', sans-serif;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: .2rem solid #8fafda;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
 
 
 /* ================================== Sign Up ================== */
@@ -147,8 +272,8 @@ p {
 }
 
 @keyframes move-Signup{
-    0% {top: 40px;}
-    25% {top: 75px}
+    0% {top: 25px;}
+    25% {top: 60px}
 }
 
 
@@ -258,11 +383,12 @@ p {
     animation-name: Login-animation;
     animation-duration: 2s;
     display: none;
+
 }
 
 @keyframes Login-animation{
-    0% {top: 40px;}
-    25% {top: 70px}
+    0% {top: 20px;}
+    25% {top: 60px}
 }
 
 .login-inputside {
@@ -494,6 +620,135 @@ p {
         0% {top: 40px;}
         25% {top: 72px}
     }
+
+    /*  ==========================WORDS SIDE */
+    
+.wordsSide {
+    margin: 25% 0% 0 15%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.logo img{
+    height: 8rem;
+}
+
+.animated-words {
+    /* display: inline;
+    
+    font-weight: 1000;
+    text-transform: uppercase;
+    background: #1e90ff;
+    font-size: 1.8rem;
+     */
+     font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    color: #525252;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+}
+
+.animated-words span:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.animated-words span:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.animated-words span:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.animated-words span:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+}
+
+.animated-words span:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    display: inline;
+    -webkit-animation: animateWord 12s linear infinite 0s;
+    -ms-animation: animateWord 12s linear infinite 0s;
+    animation: animateWord 12s linear infinite 0s;
+    
+}
+
+@-webkit-keyframes animateWord {
+    0% {
+        opacity: 0
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(20%);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.AppDescr {
+    margin-top: 2rem;
+}
+
+.AppDescr p {
+    font-family: 'Assistant', sans-serif;
+    /* font-size: 16px; */
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.StartNow button {
+    border: none;
+    background: #145599;
+    color: white;
+    padding: 10px;
+    width: 40%;
+    font-size: 12px;
+    font-family: 'Assistant', sans-serif;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: .2rem solid #8fafda;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
 }
 
 /*  Smaller or equal than phone(standard: 360px) */
@@ -621,7 +876,7 @@ p {
             position: absolute;
             margin-top: 25%;
             margin-left: 14%;
-           /* display: none; */
+
         }
 
        .username{
@@ -776,5 +1031,50 @@ p {
         
         .ToResetPasswordBtn{
             margin: 1rem 0;
+        }
+
+        /* ==== animated words */
+
+        .wordsSide {
+            margin: 30% 5% 0 12%;
+            position: absolute;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        
+        .logo img{
+            height: 4rem;
+            margin: .1rem 25%;
+        }
+        
+        .animated-words {
+             font-size: .6rem;
+             margin: .1rem 18%;
+        }
+
+        .AppDescr {
+            margin-top: 1rem;
+        }
+        
+        .AppDescr p {
+            font-family: 'Assistant', sans-serif;
+            /* font-size: 16px; */
+            color: #777;
+            font-size: .72rem;
+        }
+        
+        .StartNow button {
+            padding: 8px;
+            width: 100%;
+            font-size: 10px;
+            font-family: 'Assistant', sans-serif;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 1rem auto;
+            border: .2rem solid #8fafda;
+            cursor: pointer;
+            outline: none;
+            font-weight: 600;
+            letter-spacing: .1rem;
         }
 }
