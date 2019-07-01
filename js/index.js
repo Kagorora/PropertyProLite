@@ -1,6 +1,7 @@
 var MenuToggle = document.querySelector('#Menu-Toggle');
 var MenuTogglecloser = document.querySelector('#Menu-Toggle-closer');
 var SmallScreenMenu = document.querySelector('.small-screen-Menu');
+var wordsSide = document.querySelector('.wordsSide');
 
 var SignUpBtn = document.querySelector('#SignUpBtn');
 var LoginBtn = document.querySelector('#LoginBtn');
@@ -32,6 +33,7 @@ function closeMenu(){
     SmallScreenMenu.style.display = 'none';
     containersignup.style.display = 'none';
     loginContainer.style.display = 'none';
+    wordsSide.style.display = 'block';
 }
 
 
@@ -43,6 +45,7 @@ function displaySignUp(){
     containersignup.style.display = 'block';
     SmallScreenMenu.style.display = 'none';
     loginContainer.style.display = 'none';
+    wordsSide.style.display = 'none';
 }
 
 // display Login
@@ -53,6 +56,7 @@ function displayLogin(){
     loginContainer.style.display = 'block';
     containersignup.style.display = 'none';
     SmallScreenMenu.style.display = 'none';
+    wordsSide.style.display = 'none';
 }
 
 
