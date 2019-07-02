@@ -12,6 +12,8 @@ var loginContainer = document.querySelector('.login-container');
 var smallScreenMenuSignUpBtn = document.querySelector('#small-screen-Menu-signUp-btn'); 
 var smallScreenMenuLoginbtn = document.querySelector('#small-screen-Menu-Login-btn');
 
+const LoginBtnBtn = document.querySelector('.Login-Btn');
+
 
 // Display menu for small screens
 MenuToggle.addEventListener('click', displayMenu);
@@ -58,5 +60,13 @@ function displayLogin(){
     SmallScreenMenu.style.display = 'none';
     wordsSide.style.display = 'none';
 }
+
+// Login  into the system
+LoginBtnBtn.addEventListener('click', LoginIntoTheSystem);
+
+
+function LoginIntoTheSystem(){
+    window.location.href = '../agent.html';
+} 
 
 
