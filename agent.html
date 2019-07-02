@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/agent.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <title>PropertyPro</title>
+</head>
+
+<body>
+    <div class="Container_Buyer">
+        <div class="sidebar">
+            <div class="content">
+                <img src="../images/PPlogoWhite.png" alt="">
+                <i class="fas fa-bars" id="menuToggleAgent"></i>
+                <i class="fas fa-times" id="menuToggleCloseAgent"></i>
+                <hr />
+                <ul>
+                    <li id="postProd"><i class="fas fa-plus-circle"></i><span class="heads">Post Advert</span> </li>
+                    <li id="HomeBtn"><i class="fas fa-shopping-cart"></i><span>Home</span></li>
+                    <li id="MyProductsBtn"><i class="fas fa-pen"></i><span> My Products</span></li>
+                    <li><i class="fas fa-trash"></i> <span>Remove Product</span></li>
+                    <hr />
+                    <a href="../index.html"><i class="fas fa-sign-out-alt"></i> log out</a>
+                </ul>
+
+            </div>
+        </div>
+        <div id="add-item" class="postingspace">
+
+            <!-- ============== Product =============== -->
+
+
+
+            <!-- ====================================== -->
+
+            <!-- =========================  Post product    ================================== -->
+            <div class="postproducts" id="postproductsfrm">
+                <h2>Post Product</h2>
+                <hr>
+                <div class="all" id="allPostProductInput">
+
+                    <p>
+                        <label for="">Rent Or Sell</label>
+                        <select name="" id="prdttyp">
+                            <option value="">Sell</option>
+                            <option value="">Rent</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="">Price</label>
+
+
+                        <input type="text" id="priceinput" placeholder="Eg: 1,500,000 ">
+                    </p>
+
+                    <p>
+                        <label for="">state</label>
+                        <input type="text" id="priceinput" placeholder="eg: Rwanda">
+                    </p>
+
+                    <p>
+                        <label for="">city</label>
+                        <input type="text" id="priceinput" placeholder="eg: Kigali">
+                    </p>
+
+                    <p>
+                        <label for="">Type</label>
+                        <input type="text" id="priceinput" placeholder="eg: 3 bed">
+                    </p>
+
+                    <p>
+                        <label for="">Upload photo</label>
+                        <input type="file" name="Product_Photo">
+                    </p>
+
+                    <p id="buttons">
+                        <button id="cancelbtn">Cancel</button>
+                        <button id="okpostproductbtn">Post Product</button>
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <!-- =======================    ****    ============================== -->
+
+
+            <!-- =======================    PRODUCTS ============================== -->
+            <div class="MyAdvert">
+                <div class="searchPanel">
+                    <select name="" id="">
+                        <option value="">View All Properties</option>
+                        <option id="SearchAdvertsPanel" class="Only3BedRBtn" value="">Only 3 Bed Room</option>
+                        <option value="">Only 2 Bed Room</option>
+                        <option value="">Mini Apprtement</option>
+                    </select>
+                </div>
+
+                <!-- =========================== view Each Product ===================== -->
+                <!-- Product 1 -->
+                <div class="EachProductView">
+                    <div class="EachProductView-ImageSide">
+                        <!-- <img src="../images/jsprifdd1gmfy7e7nola.webp" alt="Lights" style="width:100%;max-width:400px"> -->
+                        <!-- <img src="../images/house.jpeg" alt=""> -->
+                    </div>
+                    <div class="EachProductView-ContentSide">
+
+                        <i class="fas fa-times" id="CloseEachProductView-ContentSide"></i>
+                        <ul>
+                            <span>
+                                <h6 class="header">State:</h6> Rwanda
+                            </span>
+                            <span>
+                                <h6 class="header">City:</h6> Kigali
+                            </span>
+                            <span>
+                                <h6 class="header">Rooms:</h6> 3 Bed Rooms
+                            </span>
+                            <span>
+                                <h6 class="header">Extra:</h6> Pool, Backyard
+                            </span>
+                            <span>
+                                <h6 class="header">Status:</h6> On Sell
+                            </span>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <!-- =================================================================== -->
+
+
+
+                <!-- ======================== Available Products ======================= -->
+                <div class="blocks">
+                    <ul>
+                        <li class="HousePost1"> <img src="../images/house.jpeg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+                        <li class="HousePost2"> <img src="../images/house2222.jpg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+
+
+
+                        <li class="HousePost3"> <img src="../images/house.jpeg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+
+
+
+                        <li class="HousePost4"> <img src="../images/house2222.jpg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+
+
+
+                        <li class="HousePost5"><img src="../images/house.jpeg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+
+
+                        <li class="HousePost6"> <img src="../images/house2222.jpg" alt="">
+                            <div class="PropertyName">House 1</div>
+                            <div class="PropertyDesc">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus.
+                                Aspernatur saepe error magnam quis quidem eligendi perferendis.
+                            </div>
+
+                            <div class="price">
+                                <span class="currency">FRW</span>
+                                <span class="value">
+                                    <span class="amount">259</span>
+                                    <span class="cents">.99</span>
+                                </span>
+                            </div>
+
+                            <div class="status">
+                                On Sell
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- =========================== ****   =============================== -->
+
+
+
+            <!-- ============================ Own Adverts ========================== -->
+            <div >
+                <table class="MyOwnAdvertsTable">
+                    <tr>
+                        <th>PropertyId</th>
+                        <th>Created_On</th>
+                        <th>Address</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+
+                    <tr>
+                        <td>P01</td>
+                        <td>1/June/2019</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>4,500,000 FRW</td>
+                        <td><img src="./images/house.jpeg" alt=""></td>
+                        <td><span class="green">Sold</span></td>
+                        <td><button id="EditMyAdvertBtn" class="button-button-primary">Update</button></td>
+                        <td><button id="DeleteMyAdvertBtn" class="button-button-danger">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>P01</td>
+                        <td>1/June/2019</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>4,500,000 FRW</td>
+                        <td><img src="./images/house.jpeg" alt=""></td>
+                        <td><span class="green">Sold</span></td>
+                        <td><button id="EditMyAdvertBtn" class="button-button-primary">Update</button></td>
+                        <td><button id="DeleteMyAdvertBtn" class="button-button-danger">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>P01</td>
+                        <td>1/June/2019</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>4,500,000 FRW</td>
+                        <td><img src="./images/house.jpeg" alt=""></td>
+                        <td><span class="OnSell">On sell</span></td>
+                        <td><button id="EditMyAdvertBtn" class="button-button-primary">Update</button></td>
+                        <td><button id="DeleteMyAdvertBtn" class="button-button-danger">Delete</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>P01</td>
+                        <td>1/June/2019</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>4,500,000 FRW</td>
+                        <td><img src="./images/house.jpeg" alt=""></td>
+                        <td><span class="green">Sold</span></td>
+                        <td><button id="EditMyAdvertBtn" class="button-button-primary">Update</button></td>
+                        <td><button id="DeleteMyAdvertBtn" class="button-button-danger">Delete</button></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!-- ========================   Edit My Product Card Card   ===================== -->
+            <div class="MyProductOnSellCard">
+
+                <div class="CardPictureSide">
+                    <div class="Photo"></div>
+                    <div class="tag">
+                        <input id="txt-status" class="inp" name="status" type="text" value="Active">
+                    </div>
+                </div>
+
+                <div class="CardInfoSide">
+
+                    <i id="CloseMyProductOnSellCard" class="fas fa-times"></i>
+
+                    <div class="info">
+                        <div class="group-info">
+                            <label for="">PropertyId</label>
+                            <input type="text" value="P001">
+                        </div>
+                        <div class="group-info">
+                            <label for="">OwnerNames</label>
+                            <input type="text" value="Kagorora Maxime">
+                        </div>
+
+                        <div class="group-info">
+                            <label for="">Price</label>
+                            <input type="text" value="4,500,000">
+                        </div>
+
+                        <div class="group-info">
+                            <label for="">Address</label>
+                            <input type="text" value="Kigali-Rwanda">
+                        </div>
+
+                        <div class="Buttons">
+                            <button id="UpdateePropertyBtn">Save</button>
+                            <button id="SoldPropertyBtn" class="btn btn-warn">Sold</button>
+                            <!-- <button id="DeactivateBtn">Deactivate</button> -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================================== *********** ============================= -->
+
+            <!-- Delete Product Confirmation -->
+            <div class="DeleteConfirmationMsg">
+                <div class="contentt">
+                    <div class="header">
+                        <h4>Delete Alert</h4>
+                    </div>
+                    <div class="DeleteConfirmationBody">
+                        <p>Are you Sure you want to remove this product?</p>
+                    </div>
+
+                    <div class="DeleteConfirmationButtonss">
+                        <ul>
+                            <a href="#" id="DeletMyAdvrtBtn">Delete</a>
+                            <a href="#" id="CancelDeleteConfirmationMsgt">Cancel</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ========   ***** ========== -->
+        </div> -->
+
+    </div>
+
+    <script src="./js/agent.js"></script>
+</body>
+
+</html>
