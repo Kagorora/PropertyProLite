@@ -568,6 +568,7 @@
 }
 
 #CloseMyProductOnSellCard {
+    display: none;
     float: right;
     margin-right: 8%;
     font-size: 12px;
