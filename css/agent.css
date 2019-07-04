@@ -260,20 +260,18 @@
     height: 6%;
     background: #fcfcfd;
     position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, .11);
-    
+    border-bottom: 1px solid rgba(0, 0, 0, .11);  
 }
 
 .searchPanel-btns{
 
-    width: 80%;
-    height: 90%;
-    margin: 5px auto;
-
+    width: 60%;
+    height: 60%;
+    padding: 12px 0 0 30% ;
 }
 
 .searchPanel .searchPanel-btns button {
-    margin: .7% 5% ;
+    margin: 0.1% 0 0 5% ;
     width: 8rem;
     height: 2rem;
     background: #ffffff;
@@ -316,9 +314,6 @@
     border-color: #35aace;
 }
 
-.blocks {
-    /* display: none; */
-}
 
 .blocks ul li .Price {
     text-transform: uppercase;
@@ -693,7 +688,6 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    display: inline;
     margin-top: 5%;
 }
 
@@ -756,9 +750,7 @@
     margin-bottom: 10%;
 }
 
-.DeleteConfirmationButtonss {
-    /* float: right; */
-}
+
 
 .DeleteConfirmationButtonss a {
     text-decoration: none;
@@ -816,8 +808,22 @@
     #menuToggleAgent {
         display: block;
     }  
+
+    .searchPanel .searchPanel-btns button{
+        width: 95px;
+    }
 }
 
 /* =============================================================== */
 
-/* Responsiveness 768px*/
+/* Responsiveness 350px*/
+
+@media screen and (max-width:600px){
+    .searchPanel{
+        display: none;
+    }
+
+    .searchPanel .searchPanel-btns button{
+        display: none;
+    }
+}

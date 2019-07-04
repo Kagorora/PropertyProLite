@@ -118,7 +118,7 @@ for(Myprods of EditMyAdvertBtn){
 
 function displayMyAdvertUpdateCard(){
     MyProductOnSellCard.style.display = 'block';
-    MyOwnAdvertsTable.style.display = "none";
+    MyOwnAdvertsTable.style.display = 'none';
     
 }
 
@@ -126,7 +126,7 @@ UpdateePropertyBtn.addEventListener('click', closeMyAdvertUpdateCard);
 
 function closeMyAdvertUpdateCard(){
     MyProductOnSellCard.style.display = 'none';
-    MyOwnAdvertsTable.style.display = "block";
+    MyOwnAdvertsTable.style.display = 'block';
     
 }
 
