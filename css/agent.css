@@ -59,6 +59,10 @@
     padding-top: 1rem;
 }
 
+
+
+
+
 .content ul li {
     list-style: none;
     padding: 13px;
@@ -251,28 +255,40 @@
 
 /* ============================= My Adverts ===================== */
 
-.MyAdvert {
-    width: 100%;
-    float: right;
-    height: 100vh;
-    /* display: none; */
-}
-
 .searchPanel {
     width: 100%;
     height: 6%;
     background: #fcfcfd;
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, .11);
+    
 }
 
-.searchPanel select {
-    margin: 1% 40%;
-    width: 15rem;
+.searchPanel-btns{
+
+    width: 80%;
+    height: 90%;
+    margin: 5px auto;
+
+}
+
+.searchPanel .searchPanel-btns button {
+    margin: .7% 5% ;
+    width: 8rem;
     height: 2rem;
     background: #ffffff;
     border-radius: 5px;
     font-size: 1.1rem;
+    margin-left: 1%;
+    float: left;
+    border: 1px solid #8b8b8b;
+}
+
+.MyAdvert {
+    width: 100%;
+    float: right;
+    height: 100vh;
+    /* display: none; */
 }
 
 .MyAdvert ul {
@@ -799,7 +815,7 @@
     }
     #menuToggleAgent {
         display: block;
-    }
+    }  
 }
 
 /* =============================================================== */

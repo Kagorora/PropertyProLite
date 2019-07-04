@@ -123,36 +123,36 @@
             <!-- ================================== Login =================================== -->
             <div class="login-container">
                 <div class="login-inputside">
-                    <div class="all-login-inputside">
+                    <form class="all-login-inputside">
                         <h2 id="LoginFormHeader">Login in</h2>
                         <div class="content">
                             <p class="username">
 
                                 <label for=""><i class="fas fa-user"></i>Username <span id="usernme"></span></label>
-                                <input type="text">
+                                <input type="text" type="email" placeholder="Email adress" required>
                             </p>
 
                             <p class="password">
 
                                 <label for=""><i class="fas fa-lock"></i>Password <span id="passwrde"></span></label>
-                                <input type="password">
+                                <input type="password" placeholder="Password" minlength="5" required>
                             </p>
                             <button class="Login-Btn">Sign in</button>
 
                             <a class="ToResetPasswordBtn" href="./agent.html" class="forgotPsw">Forgot your
                                 password?</a>
                             <a class="createacct" href="#"><span>Don't have an account? </span> Sign up</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-            <!-- ================================== *****  =================================  -->
-
         </div>
+        <!-- ================================== *****  =================================  -->
 
-        <div class="footer">
-            <p>Kagorora &copy copyright</p>
-        </div>
+    </div>
+
+    <div class="footer">
+        <p>Kagorora &copy copyright</p>
+    </div>
     </div>
 
     <script src="./js/index.js"></script>
