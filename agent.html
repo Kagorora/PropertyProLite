@@ -22,7 +22,6 @@
                     <li id="postProd"><i class="fas fa-plus-circle"></i><span class="heads">Post Advert</span> </li>
                     <li id="HomeBtn"><i class="fas fa-shopping-cart"></i><span>Home</span></li>
                     <li id="MyProductsBtn"><i class="fas fa-pen"></i><span> My Products</span></li>
-                    <li><i class="fas fa-trash"></i> <span>Remove Product</span></li>
                     <hr />
                     <a href="../index.html"><i class="fas fa-sign-out-alt"></i> log out</a>
                 </ul>
@@ -94,12 +93,13 @@
             <!-- =======================    PRODUCTS ============================== -->
             <div class="MyAdvert">
                 <div class="searchPanel">
-                    <select name="" id="">
-                        <option value="">View All Properties</option>
-                        <option id="SearchAdvertsPanel" class="Only3BedRBtn" value="">Only 3 Bed Room</option>
-                        <option value="">Only 2 Bed Room</option>
-                        <option value="">Mini Apprtement</option>
-                    </select>
+
+                    <div class="searchPanel-btns">
+                        <button>Mini flat</button>
+                        <button>3 BedRoom</button>
+                        <button>2 BedRoom</button>
+                    </div>
+
                 </div>
 
                 <!-- =========================== view Each Product ===================== -->
@@ -273,7 +273,7 @@
 
 
             <!-- ============================ Own Adverts ========================== -->
-            <div >
+            <div>
                 <table class="MyOwnAdvertsTable">
                     <tr>
                         <th>PropertyId</th>
