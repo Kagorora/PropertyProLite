@@ -68,7 +68,7 @@ LoginBtnBtn.addEventListener('click', LoginIntoTheSystem);
 
 
 function LoginIntoTheSystem(){
-    window.location.href = '../agent.html';
+    window.location.href = './agent.html';
 } 
 
 
