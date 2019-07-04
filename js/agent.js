@@ -96,6 +96,7 @@ function displayMyProducts(){
     MyAdvert.style.display = 'none';
     // MyOwnAdverts.style.display = 'block';
     MyOwnAdvertsTable.style.display = 'block';
+    postproductsfrm.style.display = 'none';
 }
 
 
