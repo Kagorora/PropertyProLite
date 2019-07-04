@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/adminDash.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="headerLogoSpace">
+            <img src="../images/PPlogoWhite.png" alt="">
+            <h3>Admin DashBoard</h3>
+            <a href="./login.html"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+        </div>
+
+        <div class="postinspace">
+
+
+            <div class="sidemenu">
+
+                <div class="adminInfo">
+                    <a href="#">
+                        <img id="MyProfilePic" src="../images/maxoPic.png" alt="Profile">
+                    </a>
+                    <span class="Job-Title">Admin</span>
+                    <span class="EmployeeNames">Kagorora Maxime</span>
+                </div>
+
+                <nav class="sidebarList">
+                    <ul>
+                        <li class="UsersBtn"><i class="fas fa-user-circle"></i> Users</li>
+                        <li class="PropertiesBtn"><i class="fas fa-home"></i>Properties</li>
+                        <li class="LogOutBtn"><i class="fas fa-sign-out-alt"></i> Log Out</li>
+
+                    </ul>
+                </nav>
+
+                <!-- <ul>
+                    <li>Users</li>
+                    <li>Properties</li>
+                    <li>Flags</li>
+                    <li>Log Out</li>
+                </ul> -->
+            </div>
+
+            <div class="DashSpace">
+
+
+                <!-- Users Table List -->
+                <table class="UserTable" id="UserTableForm">
+                    <div class="indicator">
+                        <p>USERS RECORDS</p>
+                    </div>
+
+                    <div class="CreateAccountToggle">
+                        <h4>Create User</h4>
+                    </div>
+                    <tr>
+                        <th>Id</th>
+                        <th>Email</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Password</th>
+                        <th>PhoneNumber</th>
+                        <th>Address</th>
+                        <th>User-Type</th>
+                        <th>Update</th>
+
+                    </tr>
+
+                    <tr class="UserTableRow">
+                        <td>U001</td>
+                        <td>MarryRose@gmail.com</td>
+                        <td>Marry</td>
+                        <td>Rose</td>
+                        <td>marrie</td>
+                        <td>0789456123</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>user</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+
+                    <tr class="UserTableRow">
+                        <td>U001</td>
+                        <td>MarryRose@gmail.com</td>
+                        <td>Marry</td>
+                        <td>Rose</td>
+                        <td>marrie</td>
+                        <td>0789456123</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>user</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    </tr>
+
+                    <tr class="UserTableRow">
+                        <td>U001</td>
+                        <td>MarryRose@gmail.com</td>
+                        <td>Marry</td>
+                        <td>Rose</td>
+                        <td>marrie</td>
+                        <td>0789456123</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>user</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    <tr class="UserTableRow">
+                        <td>u001</td>
+                        <td>chrisgreen@gmail.com</td>
+                        <td>chris</td>
+                        <td>Green</td>
+                        <td>Rwanda*1</td>
+                        <td>0787894561</td>
+                        <td>Kigali</td>
+                        <td>Agent</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+
+                    </tr>
+                    <tr class="UserTableRow">
+                        <td>U001</td>
+                        <td>MarryRose@gmail.com</td>
+                        <td>Marry</td>
+                        <td>Rose</td>
+                        <td>marrie</td>
+                        <td>0789456123</td>
+                        <td>Kigali-Rwanda</td>
+                        <td>user</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+
+                    <tr class="UserTableRow">
+                        <td>u001</td>
+                        <td>chrisgreen@gmail.com</td>
+                        <td>chris</td>
+                        <td>Green</td>
+                        <td>Rwanda*1</td>
+                        <td>0787894561</td>
+                        <td>Kigali</td>
+                        <td>Agent</td>
+                        <td class="updateUserBtnOnUserForms"><i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+
+                </table>
+                <!--  -->
+
+
+                <!-- ============ update user table =============-->
+                <div class="UpdateUserForm">
+                    <div class="userImgSide">
+                        <h3>Marry Rose</h3>
+                    </div>
+
+                    <div class="infoSide">
+
+
+                        <div class="info">
+                            <label for="">Names</label>
+                            <input type="text" name="" id="" value="Marry Rose">
+                        </div>
+
+                        <div class="info">
+                            <label for="">Email</label>
+                            <input type="text" name="" id="" value="MarryRose@gmail.com">
+                        </div>
+
+
+
+                        <div class="info">
+                            <label for="">PhoneNo</label>
+                            <input type="text" name="" id="" value="078945612">
+                        </div>
+                        <div class="info">
+                            <label for="">Address</label>
+                            <input type="text" name="" id="" value="Kigali-Rwanda">
+                        </div>
+
+                        <div class="info">
+                            <label for="">User-Type</label>
+                            <select name="" id="">
+                                <option value="" selected>User</option>
+                                <option value="">Is-Admin</option>
+                            </select>
+                        </div>
+
+                        <div class="UpdateButtons">
+
+                            <button id="cancelBtnUpdateUserForm">cancel</button>
+                            <button id="deleteBtnUpdateUserForm">Delete</button>
+                            <button id="updateBtnUpdateUserForm">Update</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- =========================================== -->
+
+
+                <!-- ==================== Create User =============== -->
+                <div class="CreateUserForm">
+                    <div class="CreateUserForm-Header">
+                        <h3>Create User</h3>
+                    </div>
+                    <div class="group-info">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="group-info">
+                        <label for="">FirstName</label>
+                        <input type="text">
+                    </div>
+                    <div class="group-info">
+                        <label for="">LastName</label>
+                        <input type="text">
+                    </div>
+                    <div class="group-info">
+                        <label for="">PhoneNo</label>
+                        <input type="text">
+                    </div>
+                    <div class="group-info">
+                        <label for="">Addres</label>
+                        <input type="text">
+                    </div>
+                    <div class="group-info">
+                        <label for="">User-Type</label>
+                        <select name="" id="">
+                            <option value="">Staff</option>
+                            <option value="">User</option>
+                        </select>
+                    </div>
+
+                    <div class="group-info">
+                        <button id="cancelBtnCreateUser">Cancel</button>
+                        <button id="SaveBtnCreateUser">Save</button>
+
+
+                    </div>
+                </div>
+                <!-- ================================================ -->
+
+
+
+                <!-- =========================================== Properties ================================================== -->
+
+                <div class="indicatorProperties">
+                    <h4>Properties RECORDS</h4>
+                </div>
+
+                <!-- Table of Records -->
+                <table class="PropertiesRecords">
+                    <tr>
+                        <th>PropertyId</th>
+                        <th>OwnerNames</th>
+                        <th>Price</th>
+                        <th>Address</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Created_on</th>
+                        <th>Image</th>
+                        <th>Update</th>
+                    </tr>
+                    <tr>
+                        <td>P001</td>
+                        <td>Kagorora Maxime</td>
+                        <td>2,500,000 Frw</td>
+                        <td>Gasabo-Kigali-Rwanda</td>
+                        <td>3 bedroom</td>
+                        <td>On sell</td>
+                        <td>15/June/2019</td>
+                        <td><img class="ImgCol" src="../images/house2222.jpg" alt=""></td>
+                        <td class="UpdatePropertiesRecords"> <i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>P001</td>
+                        <td>Kagorora Maxime</td>
+                        <td>2,500,000 Frw</td>
+                        <td>Gasabo-Kigali-Rwanda</td>
+                        <td>3 bedroom</td>
+                        <td>On sell</td>
+                        <td>15/June/2019</td>
+                        <td><img class="ImgCol" src="../images/house2222.jpg" alt=""></td>
+                        <td class="UpdatePropertiesRecords"> <i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>P001</td>
+                        <td>Kagorora Maxime</td>
+                        <td>2,500,000 Frw</td>
+                        <td>Gasabo-Kigali-Rwanda</td>
+                        <td>3 bedroom</td>
+                        <td>On sell</td>
+                        <td>15/June/2019</td>
+                        <td><img class="ImgCol" src="../images/house2222.jpg" alt=""></td>
+                        <td class="UpdatePropertiesRecords"> <i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>P001</td>
+                        <td>Kagorora Maxime</td>
+                        <td>2,500,000 Frw</td>
+                        <td>Gasabo-Kigali-Rwanda</td>
+                        <td>3 bedroom</td>
+                        <td>On sell</td>
+                        <td>15/June/2019</td>
+                        <td><img class="ImgCol" src="../images/house2222.jpg" alt=""></td>
+                        <td class="UpdatePropertiesRecords"> <i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>P001</td>
+                        <td>Kagorora Maxime</td>
+                        <td>2,500,000 Frw</td>
+                        <td>Gasabo-Kigali-Rwanda</td>
+                        <td>3 bedroom</td>
+                        <td>On sell</td>
+                        <td>15/June/2019</td>
+                        <td><img class="ImgCol" src="../images/house2222.jpg" alt=""></td>
+                        <td class="UpdatePropertiesRecords"> <i class="fas fa-pencil-alt"></i></td>
+                    </tr>
+
+
+
+
+                </table>
+
+
+                <!-- Product On Sell In details -->
+
+                <div class="ProductOnSellCard">
+                    <div class="CardPictureSide">
+                        <div class="Photo"></div>
+                        <div class="tag"><h4>On Sell</h4></div>
+                    </div>
+
+                    <div class="CardInfoSide">
+                        <div class="group-info">
+                            <label for="">PropertyId</label>
+                            <input type="text">
+                        </div>
+                        <div class="group-info">
+                            <label for="">OwnerNames</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="group-info">
+                            <label for="">Price</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="group-info">
+                            <label for="">Address</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="group-info">
+                            <label for="">PropertyId</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="Buttons">
+                            <button id="DeactivateBtn">Deactivate</button>
+                            <button id="DeletePropertyBtn">Delete</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/adminDash.js"></script>
+</body>
+
+</html>
