@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+
+.headerLogoSpace{
+    width: 100%;
+    height: 7vh;
+    background: #1976d3;
+    place-content: unset;
+}
+
+.headerLogoSpace img{
+    height: 3rem;
+    width: 6rem;
+    margin-left: 3.5rem;
+    margin-top: .7rem;
+}
+
+.headerLogoSpace h3{
+    text-align: center;
+    margin-top: -3rem;
+    color: rgb(242, 247, 255);
+    font-size: 1.5rem;
+
+}
+
+.headerLogoSpace a i{
+    margin-right: 1rem;
+}
+
+.headerLogoSpace a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: -1.5rem 8% 0 0;
+}
+
+.postinspace{
+    width: 100%;
+    height: 93vh;
+    box-sizing: border-box;
+
+}
+
+.sidemenu{
+    background: #ffffff;
+    height: 93vh; 
+    position: absolute;
+    width: 12%;
+    float: left;
+    box-shadow: 0 .5px .5rem rgba(0, 0, 0, .1);
+    color: #6c7177;;
+    border-right: 1px solid rgba(0,0,0,.11);
+}
+
+.DashSpace{
+    background: #f1f2f3;
+    height: 93vh;
+    width: 88%;
+    float: right;
+}
+
+.sidebarList{
+    font-weight: 500;
+    color: #6c7177
+}
+
+.sidebarList ul li{
+    
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: 0px;
+    display: block;
+    padding: 18px;
+
+}
+
+.UsersBtn{
+    /* background: #ddd; */
+}
+
+.sidebarList ul li i{
+    margin-right: 20px;
+}
+
+.sidebarList ul li:hover{
+    background: #f1f2f3;
+    cursor: pointer;
+}
+
+.adminInfo{
+    position: relative;
+    display: block;
+    margin: 3rem auto;
+}
+
+#MyProfilePic{
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    margin: 12% 25% 5% 25%;
+    position: relative;
+}
+
+
+.adminInfo .Job-Title{
+    display: block;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.adminInfo .EmployeeNames{
+    display: block;
+    text-align: center;
+    font-size: 90%;
+    font-weight:thin;
+}
+
+/* ============================== Users Table =================================== */
+
+.indicator{
+    width: 13%;
+    height: 5%;
+    background: white;
+    margin-left: 36%;
+    margin-top: 10px;
+    padding-top: 12px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .1);
+}
+
+
+.indicator p{
+    text-align: center;
+    font-size: 1rem;
+    color: #444444;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    opacity: .7;
+}
+
+.UserTable{
+    background: #ffffff;
+    width: 60%;
+    margin: 4% 0 10px 6%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, .2);
+    position: absolute;
+        
+}
+
+.UserTable td{
+    cursor: pointer;
+}
+
+.UserTable td, .UserTable th{
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.UserTable tr td i{
+    margin-left: 40%;
+}
+
+.UserTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.UserTable tr:nth-child(even):hover{
+    background: white;
+}
+
+.UserTable th {
+  padding: 1.5rem;
+  text-align: left;
+  background-color: #ffffff;
+  color: rgb(119, 118, 118);
+  font-size: 1.1rem;
+}
+
+
+/* ========================== Update Form ============= */
+
+.UpdateUserForm{
+    background:#ffffff;
+    width: 38%;
+    z-index: 5;
+    margin: 10% 0 0 20%;
+    z-index: 5;
+    position: absolute;
+    display: none;
+    
+}
+
+.userImgSide{
+    float: left;
+    background: #1976d3;
+    height: 40vh;
+    background-image: url(../images/lady.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, .2);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.userImgSide h3{
+    text-align: center;
+    margin-top: 85%;
+    color: white;
+}
+
+
+.infoSide{
+    float: right;
+    width: 50%;
+    background: #ffffff;
+    height: 40vh;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, .2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* .infoSide .info{
+    margin: 1rem auto;
+} */
+
+.infoSide h4{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    
+}
+
+.info{
+    /* display: block !important; */
+}
+
+.infoSide .info{
+    margin: 2% 0 2.5% 15% ;
+}
+
+.info label{
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1rem;
+}
+
+
+.infoSide input, .infoSide select{
+    padding: 12px;
+    width: 85%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+    outline: none;
+}
+
+.UpdateButtons button{
+    margin: .4rem auto;
+    padding: 10px;
+    float: right;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid rgba(0,0,0,.20);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#updateBtnUpdateUserForm{
+    width: 25%;
+    padding: 12px;
+    background: #1976d3;
+    color: white;
+    border: 1px solid rgba(0,0,0,.11);
+}
+
+#updateBtnUpdateUserForm:hover{
+    background: #1560ac;
+}
+
+#cancelBtnUpdateUserForm{
+    width: 18%;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+
+#cancelBtnUpdateUserForm:hover{
+    background: rgb(235, 231, 231);
+}
+
+#deleteBtnUpdateUserForm{
+    width: 18%;
+    margin-left: 1rem;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,.5);
+    background: rgb(253, 89, 89);
+    color: white;
+}
+
+/* ===========  Create User ================= */
+
+/* create user button */
+
+.CreateAccountToggle{
+    margin: 1% 0 0 74%;
+    position: absolute;
+    width: 10%;
+    height: 4.5vh;
+    background: #2073c5;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .1);
+}
+
+.CreateAccountToggle h4{
+    color: white;
+    text-align: center;
+    margin-top: 7%;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.CreateAccountToggle:hover{
+    background: #6095ca;
+}
+
+
+/* ================ .CreateUserForm ========= */
+
+
+.CreateUserForm{
+    background: white;
+    width: 30%;
+    height: 39rem;
+    margin: 4% 0 0 30%;
+    padding-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0,0,0,.11);
+    position: absolute;
+    display: none;
+}
+
+.CreateUserForm-Header{
+    margin: 1rem;
+}
+
+.CreateUserForm-Header h3{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.CreateUserForm .group-info{
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    margin-left: 10%;
+}
+
+.CreateUserForm .group-info label{
+    display: block;
+ 
+}
+
+.CreateUserForm .group-info input,.CreateUserForm .group-info select{
+    padding: 12px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: none;
+}
+
+.group-info label{
+    margin-left: 3rem;
+    margin-bottom: 2.5px;
+}
+
+.group-info button{
+    float: right;
+    margin-top: .7rem;
+    outline: none;
+}
+
+#SaveBtnCreateUser{
+    padding: 10px;
+    width: 25%;
+    border: 1px solid #1c5597;
+    background: #1c5597;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#cancelBtnCreateUser{
+    padding: 10px;
+    width: 25%;
+    border: 1px solid #1c5597;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 15%;
+    margin-left: .5rem;
+}
+
+/* ==================================================== Properties ============================= */
+
+
+.indicatorProperties{
+    width: 13%;
+    height: 6vh;
+    background: white;
+    margin-left: 32%;
+    margin-top: 10px;
+    padding-top: 12px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .1); 
+    position: absolute;
+     display: none;
+}
+
+.indicatorProperties h4{
+    text-align: center;
+    font-size: 2rem;
+    color: #444444;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    opacity: .7;
+}
+
+
+/* ==================== Properties Records Table ================= */
+.PropertiesRecords{
+     background: #ffffff;
+    margin-left: 6%;
+    margin-right: 18%;
+    margin-top: 4%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 2rem rgba(0, 0, 0, .2);
+    position: absolute;
+    display: none;
+    
+    
+}
+
+ .PropertiesRecords th{
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.PropertiesRecords td{
+    border: 1px solid #ddd;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.PropertiesRecords tr td i{
+    margin-left: 40%;
+}
+
+.PropertiesRecords tr:nth-child(even){background-color: #f2f2f2;}
+
+.PropertiesRecords tr:nth-child(even):hover{
+    background: white;
+}
+
+.PropertiesRecords th {
+  padding: 1.5rem;
+  text-align: left;
+  background-color: #ffffff;
+  color: rgb(119, 118, 118);
+  font-size: 1.1rem;
+}
+
+.ImgCol{
+    height: 2.5rem;
+    width: 5rem;
+}
+
+
+/* ================ Property Cards =================== */
+.ProductOnSellCard{
+    background:#ffffff;
+    width: 40%;
+    z-index: 5;
+    margin: 10% 0 0 20%;
+    z-index: 5;
+    position: absolute; 
+    height: 50%;
+    display: none;
+}
+
+.CardPictureSide{
+    float: left;
+    background: #ddd;
+    height: 100%;
+    /* background-image: url(../img/house2222.jpg); */
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, .075), 0 0 5px rgb(104, 145, 162); 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.CardPictureSide .Photo{
+    background-image: url(../images/house2222.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;   
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.tag{
+    background: white;
+    height: 2rem;
+    width: 35%;
+    margin: 1.7rem auto 0 auto;
+    /* border-top-left-radius: 50%; */
+    padding-top: .8rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .1)
+}
+
+.tag h4{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.CardInfoSide{
+    float: right;
+    width: 50%;
+    background: #ffffff;
+    height: 60%;
+    box-shadow: inset 0 0.5px 0.5px rgba(0, 0, 0, .075), 0 0 5px rgb(104, 145, 162);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.CardInfoSide .group-info{
+    margin-top: .5rem;
+}
+
+.group-info label{
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+
+.group-info input, .group-info select{
+    padding: 12px;
+    width: 85%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+    outline: none;
+    margin-left: 30px;
+}
+
+.CardInfoSide .Buttons{
+    margin-top: 1rem;
+    float: right;
+    margin-right: 2rem;    
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#DeactivateBtn{
+    width: 50%;
+    padding: 12px;
+    background: #1976d3;
+    color: white;
+    border: 1px solid rgba(0,0,0,.11);
+}
+
+#DeactivateBtn:hover{
+    background: #1560ac;
+}
+
+
+
+#DeletePropertyBtn{
+    width: 38%;
+    margin-left: 1rem;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,.5);
+    background: rgb(253, 89, 89);
+    color: white;
+}
+
+
+/* ========================================== */
+
+@media only screen and (min-width: 992px){
+
+
+}
