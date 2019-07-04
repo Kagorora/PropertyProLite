@@ -450,14 +450,14 @@
 .EachProductView-ContentSide {
     float: right;
     width: 40%;
-    padding-top: 8%;
+    padding-top: 10%;
 }
 
 .EachProductView-ContentSide ul span {
     display: block;
     box-sizing: border-box;
-    font-size: 1.5rem;
-    padding-bottom: 25px;
+    font-size: 1.3rem;
+    padding-bottom: 16px;
     margin-left: 10%;
 }
 
@@ -568,6 +568,7 @@
 }
 
 #CloseMyProductOnSellCard {
+    display: none;
     float: right;
     margin-right: 8%;
     font-size: 12px;
