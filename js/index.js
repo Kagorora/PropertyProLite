@@ -1,17 +1,20 @@
-var MenuToggle = document.querySelector('#Menu-Toggle');
-var MenuTogglecloser = document.querySelector('#Menu-Toggle-closer');
-var SmallScreenMenu = document.querySelector('.small-screen-Menu');
-var wordsSide = document.querySelector('.wordsSide');
+const MenuToggle = document.querySelector('#Menu-Toggle');
+const MenuTogglecloser = document.querySelector('#Menu-Toggle-closer');
+const SmallScreenMenu = document.querySelector('.small-screen-Menu');
+const wordsSide = document.querySelector('.wordsSide');
 
-var SignUpBtn = document.querySelector('#SignUpBtn');
-var LoginBtn = document.querySelector('#LoginBtn');
+const SignUpBtn = document.querySelector('#SignUpBtn');
+const LoginBtn = document.querySelector('#LoginBtn');
 
-var containersignup = document.querySelector('.container-signup');
-var loginContainer = document.querySelector('.login-container');
+const containersignup = document.querySelector('.container-signup');
+const loginContainer = document.querySelector('.login-container');
 
-var smallScreenMenuSignUpBtn = document.querySelector('#small-screen-Menu-signUp-btn'); 
-var smallScreenMenuLoginbtn = document.querySelector('#small-screen-Menu-Login-btn');
+const smallScreenMenuSignUpBtn = document.querySelector('#small-screen-Menu-signUp-btn'); 
+const smallScreenMenuLoginbtn = document.querySelector('#small-screen-Menu-Login-btn');
 
+const LoginBtnBtn = document.querySelector('.Login-Btn');
+
+const StartNow = document.querySelector('.StartNow');
 
 // Display menu for small screens
 MenuToggle.addEventListener('click', displayMenu);
@@ -38,6 +41,7 @@ function closeMenu(){
 
 
 // display signup
+StartNow.addEventListener('click', displaySignUp);
 smallScreenMenuSignUpBtn.addEventListener('click', displaySignUp);
 SignUpBtn.addEventListener('click', displaySignUp);
 
@@ -58,5 +62,13 @@ function displayLogin(){
     SmallScreenMenu.style.display = 'none';
     wordsSide.style.display = 'none';
 }
+
+// Login  into the system
+LoginBtnBtn.addEventListener('click', LoginIntoTheSystem);
+
+
+function LoginIntoTheSystem(){
+    window.location.href = '../agent.html';
+} 
 
 
