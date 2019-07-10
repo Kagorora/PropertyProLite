@@ -19,18 +19,6 @@ a {
     position: relative;
 }
 
-/* .navbar {
-    color: #151515;
-    margin-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-radius: 0px !important;
-    height: 72px !important;
-    background: linear-gradient(to right, #eff5fa, #ffffff) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-    box-shadow: 0 1px 1rem rgba(0, 0, 0, .11);
-} */
-
 .logo img {
     height: 7rem;
     margin-top: 8%;
@@ -288,7 +276,7 @@ a {
     border: none;
     background: #145599;
     color: white;
-    padding: 10px;
+    padding: 0px;
     width: 40%;
     font-size: 12px;
     font-family: 'Assistant', sans-serif;
@@ -298,8 +286,12 @@ a {
     border: .2rem solid #8fafda;
     cursor: pointer;
     outline: none;
+    font-size: 11px;
     font-weight: 600;
+    line-height: 38px;
     letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* ================================== Sign Up ================== */
@@ -388,7 +380,7 @@ a {
 }
 
 .all-inputside-signup button {
-    padding: 10px;
+    padding: 1px;
     width: 100%;
     display: block;
     border: 1px solid #1c5597;
@@ -398,6 +390,12 @@ a {
     cursor: pointer;
     outline: none;
     margin-top: 1rem;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .all-inputside-signup button:hover {
@@ -543,7 +541,7 @@ a {
 }
 
 .login-inputside button {
-    padding: 12px;
+    padding: 2px;
     width: 90%;
     display: block;
     border: 1px solid #1c5597;
@@ -552,6 +550,13 @@ a {
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 2rem;
 }
 
 .login-inputside button:hover {

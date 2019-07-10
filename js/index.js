@@ -16,6 +16,10 @@ const LoginBtnBtn = document.querySelector('.Login-Btn');
 
 const StartNow = document.querySelector('.StartNow');
 
+const gotologinBtn = document.querySelector('.gotologinBtn');
+
+const createacct = document.querySelector('.createacct');
+
 // Display menu for small screens
 MenuToggle.addEventListener('click', displayMenu);
 
@@ -44,6 +48,7 @@ function closeMenu(){
 StartNow.addEventListener('click', displaySignUp);
 smallScreenMenuSignUpBtn.addEventListener('click', displaySignUp);
 SignUpBtn.addEventListener('click', displaySignUp);
+createacct.addEventListener('click', displaySignUp);
 
 function displaySignUp(){
     containersignup.style.display = 'block';
@@ -53,6 +58,7 @@ function displaySignUp(){
 }
 
 // display Login
+gotologinBtn.addEventListener('click', displayLogin);
 LoginBtn.addEventListener('click', displayLogin);
 smallScreenMenuLoginbtn.addEventListener('click', displayLogin);
 

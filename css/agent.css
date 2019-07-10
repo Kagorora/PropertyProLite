@@ -468,7 +468,7 @@
 
 .MyOwnAdvertsTable{
     background: white;
-    width: 1000px;
+    width: 850px;
     display: none;
     margin: 10rem 15%;
     padding-left: 20px;
@@ -607,12 +607,7 @@
 }
 
 .tag {
-    /* height: 2rem; */
-    /* width: 35%; */
-    /* margin: 1.7rem auto 0 auto; */
-    /* border-top-left-radius: 50%; */
     padding-top: .8rem;
-    /* border-radius: 10px; */
 }
 
 .tag h4 {
@@ -635,18 +630,18 @@
 }
 
 .CardInfoSide .group-info {
-    margin-top: .1rem;
+    margin-top: .2rem;
 }
 
 .group-info label {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: block;
     font-size: .9rem;
     margin-left: 30px;
 }
 
 .group-info input, .group-info select {
-    padding: 8px;
+    padding: 11px;
     width: 85%;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -679,7 +674,7 @@
 
 #SoldPropertyBtn {
     width: 30%;
-    margin-left: 1rem;
+    margin-left: 4rem;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 12px;
@@ -689,7 +684,7 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 #UpdateePropertyBtn {
