@@ -20,6 +20,20 @@ const gotologinBtn = document.querySelector('.gotologinBtn');
 
 const createacct = document.querySelector('.createacct');
 
+const mainLogo = document.querySelector('#mainLogo');
+const usernameField = document.querySelector('#usernameField');
+const passwordField = document.querySelector('#passwordField');
+
+
+
+mainLogo.addEventListener('click', displayOnlyLanding);
+
+function displayOnlyLanding(){
+containersignup.style.display='none';
+    loginContainer.style.display='none';
+    wordsSide.style.display= 'block';
+}
+
 // Display menu for small screens
 MenuToggle.addEventListener('click', displayMenu);
 
@@ -72,9 +86,17 @@ function displayLogin(){
 // Login  into the system
 LoginBtnBtn.addEventListener('click', LoginIntoTheSystem);
 
-
 function LoginIntoTheSystem(){
-    window.location.href = './agent.html';
-} 
+    if ( usernameField.value == "admin" ){
+        window.location = "../admin.html";
+        }
+          if ( usernameField.value == "agent"){
+        window.location = "../agent.html";
+        }
+    }   
+
+
+
+
 
 

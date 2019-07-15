@@ -10,10 +10,10 @@ const cancelBtnCreateUser = document.querySelector('#cancelBtnCreateUser');
 const UserTableForm = document.getElementById('UserTableForm');
 const PropertiesBtn = document.querySelector('.PropertiesBtn');
 const indicatorProperties = document.querySelector('.indicatorProperties');
-const indicator = document.querySelector('.indicator'); 
+const indicator = document.querySelector('.indicator');
 const PropertiesRecords = document.querySelector('.PropertiesRecords');
 const ProductOnSellCard = document.querySelector('.ProductOnSellCard');
-const UsersBtn = document.querySelector('.UsersBtn'); 
+const UsersBtn = document.querySelector('.UsersBtn');
 const UpdatePropertiesRecords = document.querySelectorAll('.UpdatePropertiesRecords');
 
 
@@ -21,14 +21,14 @@ const UpdatePropertiesRecords = document.querySelectorAll('.UpdatePropertiesReco
 
 // UserTableRow.addEventListener('click', displayUserUpdateForm);
 // updateUserBtnOnUserForms.addEventListener('click', displayUserUpdateForm);
-function displayUserUpdateForm(){
+function displayUserUpdateForm() {
     UpdateUserForm.style.display = 'block';
     // UpdateUserForm.style.opacity = 1;
     UserTable.style.opacity = 0.3;
 }
 
 
-for(item of updateUserBtnOnUserForms){
+for (item of updateUserBtnOnUserForms) {
     item.addEventListener('click', displayUserUpdateForm);
 }
 
@@ -39,7 +39,7 @@ for(item of updateUserBtnOnUserForms){
 
 
 cancelBtnUpdateUserForm.addEventListener('click', closeUserUpdateForm);
-function closeUserUpdateForm(){
+function closeUserUpdateForm() {
     UpdateUserForm.style.display = 'none';
     UserTable.style.opacity = 1;
 }
@@ -52,9 +52,10 @@ function closeUserUpdateForm(){
 
 CreateAccountToggle.addEventListener('click', displayCreateAccountForm);
 
-function displayCreateAccountForm(){
+function displayCreateAccountForm() {
     CreateUserForm.style.display = 'block';
-    UserTable.style.opacity = 0.2;
+    UserTable.style.display = 'none';
+    CreateAccountToggle.style.display = 'none';
 }
 
 
@@ -62,7 +63,7 @@ function displayCreateAccountForm(){
 
 cancelBtnCreateUser.addEventListener('click', closeCreateAccountForm);
 
-function closeCreateAccountForm(){
+function closeCreateAccountForm() {
     CreateUserForm.style.display = 'none';
     UserTable.style.opacity = 1;
 }
@@ -72,23 +73,37 @@ function closeCreateAccountForm(){
 
 PropertiesBtn.addEventListener('click', displayPropertiesContent);
 function displayPropertiesContent() {
-    
+
     UserTable.style.display = 'none';
     CreateAccountToggle.style.display = 'none';
     indicator.style.display = 'none';
     PropertiesRecords.style.display = 'block';
     UsersBtn.style.background = '#ddd';
     indicatorProperties.style.display = 'block'
+    UsersBtn.style.background = '#ffffff';
+    PropertiesBtn.style.background = '#ddd'
+}
+
+// display users content
+UsersBtn.addEventListener('click', displayUserTable);
+
+function displayUserTable() {
+    UserTableForm.style.display = 'block';
+    indicatorProperties.style.display='none';
+    PropertiesRecords.style.display='none';
+    indicator.style.display='block';
+    UsersBtn.style.background = '#ddd';
+    PropertiesBtn.style.background = '#ffffff';
 }
 
 
 // display update Properties Forms
 
-for(products of UpdatePropertiesRecords){
+for (products of UpdatePropertiesRecords) {
     products.addEventListener('click', displayUpdatPropertiesForm);
 }
 
-function displayUpdatPropertiesForm(){
+function displayUpdatPropertiesForm() {
     ProductOnSellCard.style.display = 'block';
     PropertiesRecords.style.opacity = 0.2;
 

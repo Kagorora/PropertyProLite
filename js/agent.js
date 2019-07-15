@@ -32,6 +32,7 @@ const menuToggleCloseAgent = document.querySelector('#menuToggleCloseAgent');
 const menuToggleAgent = document.querySelector('#menuToggleAgent');
 const sidebar = document.querySelector('.sidebar');
 const UpdateePropertyBtn = document.querySelector('#UpdateePropertyBtn');
+const footer = document.querySelector('.footer');
 
 // ============== Post Product =============================================================================
 
@@ -40,7 +41,7 @@ postProdBtn.addEventListener('click', displaypostproductform);
 function displaypostproductform(){
     postproductsfrm.style.display = 'block';
     MyAdvert.style.display = 'none';
-    
+    footer.style.display = 'none';
 }
 
 // ==============cancel posting form ==============
@@ -52,6 +53,7 @@ cancelbtn.addEventListener('click', closepostproductform);
 function closepostproductform(){
     postproductsfrm.style.display = 'none';
     MyAdvert.style.display = 'block';
+    footer.style.display = 'none';
 }
 
 
@@ -108,6 +110,7 @@ function displayHome(){
     postproductsfrm.style.display = 'none';
     MyAdvert.style.display = 'block';
     MyOwnAdvertsTable.style.display = 'none';
+
 }
 
 
@@ -128,6 +131,7 @@ UpdateePropertyBtn.addEventListener('click', closeMyAdvertUpdateCard);
 function closeMyAdvertUpdateCard(){
     MyProductOnSellCard.style.display = 'none';
     MyOwnAdvertsTable.style.display = 'block';
+    footer.style.display = 'none';
     
 }
 
@@ -138,6 +142,7 @@ CloseMyProductOnSellCard.addEventListener('click', CloseMyProductOnSellCardForm)
 function CloseMyProductOnSellCardForm(){
     MyProductOnSellCard.style.display = 'none';
     MyOwnAdverts.style.opacity = 1;
+    footer.style.display = 'none';
 }
 
 // ============================== Display Own Adverts ================
@@ -156,6 +161,7 @@ DeleteMyAdvertBtn.addEventListener('click', displayDeleteAlert);
 function displayDeleteAlert(){
     DeleteConfirmationMsg.style.display = 'block';
     MyOwnAdvertsTable.style.display = 'none';
+    footer.style.display = 'none';
 }
 
 // cancel Delete My Product
@@ -164,6 +170,7 @@ CancelDeleteConfirmationMsgt.addEventListener('click', cancelDeleteAlertMsg);
 function cancelDeleteAlertMsg(){
     MyOwnAdvertsTable.style.display = 'block';
     DeleteConfirmationMsg.style.display = 'none';
+    footer.style.display = 'none';
 }
 
  // close Product detailed info
@@ -173,6 +180,7 @@ function cancelDeleteAlertMsg(){
  function closeProductDetailInfoo(){
     EachProductView.style.display = 'none';
     blocks.style.opacity = 1;
+    footer.style.display = 'none';
  }
 
  // display details info
@@ -200,6 +208,7 @@ HousePost6.addEventListener('click', displayDetailedProppInffo);
 function displayDetailedProppInffo(){
     EachProductView.style.display = 'block';
     blocks.style.opacity = '0.02';
+    footer.style.display = 'none';
 }
 
 
