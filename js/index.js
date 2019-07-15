@@ -87,8 +87,15 @@ function displayLogin(){
 LoginBtnBtn.addEventListener('click', LoginIntoTheSystem);
 
 function LoginIntoTheSystem(){
-        window.location.href = '../agent.html';
-} 
+    if ( usernameField.value == "admin" ){
+        window.location = "../admin.html";
+        }
+          if ( usernameField.value == "agent"){
+        window.location = "../agent.html";
+        }
+    }   
+
+
 
 
 
