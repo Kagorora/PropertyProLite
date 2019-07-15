@@ -18,6 +18,20 @@
     margin: 20px auto;
 }
 
+.footer{
+    padding: 1rem;
+    width: 80%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #070707;
+    margin: 0 10%;
+    text-align: center;
+}
+
+
+
+
+
 #menuToggleAgent {
     font-size: 1.5rem;
     margin: .2rem 2rem;
@@ -109,6 +123,7 @@
     float: left;
     height: 100vh;
     overflow-y: scroll;
+  
     /* background: linear-gradient(to right, #f6fbff, #ffffff); */
     background: #f6f6f6;
 }
@@ -626,7 +641,7 @@
 }
 
 .CardInfoSide .info {
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .CardInfoSide .group-info {
