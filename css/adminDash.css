@@ -329,7 +329,7 @@ body {
 /* create user button */
 
 .CreateAccountToggle{
-    margin: 1% 0 0 74%;
+    margin: .7% 0 0 74%;
     position: absolute;
     width: 10%;
     height: 4.5vh;

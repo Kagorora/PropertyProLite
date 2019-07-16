@@ -90,7 +90,7 @@ function LoginIntoTheSystem(){
     if ( usernameField.value == "admin" ){
         window.location = "../admin.html";
         }
-          if ( usernameField.value == "agent"){
+        if ( usernameField.value == "agent"){
         window.location = "../agent.html";
         }
     }   
